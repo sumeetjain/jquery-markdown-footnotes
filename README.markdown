@@ -1,0 +1,1 @@
+This is a JS snippet that adds functionality to the footnote implementation in Markdown.

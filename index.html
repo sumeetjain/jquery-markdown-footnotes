@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Sandbox</title>
+	<script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(function() {
+			$('sup').has("a[rel=footnote]").each(function(){
+				var footnote = $(this);
+				var footnoteContent = $(document.getElementById('fn:1')).html();
+				var link = footnote.find("a[rel=footnote]");
+				
+				footnote.css('position', 'relative').append('<div class="footnoteContent" style="display: none">' + footnoteContent + '</div>');
+				link.click(function(){
+					footnote.find(".footnoteContent").toggle();
+				});
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <sup id='fnref:1'><a href='#fn:1' rel='footnote'>1</a></sup> reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla<sup id='fnref:2'><a href='#fn:2' rel='footnote'>2</a></sup> pariatur. Excepteur sint occaecat<sup id='fnref:3'><a href='#fn:3' rel='footnote'>3</a></sup> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<div class='footnotes'>
+	<hr />
+	<ol>
+		<li id='fn:1'>
+			<p>Foo bar</p>
+			<a href='#fnref:1' rev='footnote'>&#8617;</a>
+		</li>
+		
+		<li id='fn:2'>
+			<p>Aye caramba!</p>
+			<a href='#fnref:2' rev='footnote'>&#8617;</a>
+		</li>
+		
+		<li id='fn:3'>
+			<p>Hmph.</p>
+			<p>Mope mope mope.</p>
+			<a href='#fnref:3' rev='footnote'>&#8617;</a>
+		</li>
+	</ol>
+</div>
+
+</body>
+</html>
+
