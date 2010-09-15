@@ -1,17 +1,15 @@
 This is a JS snippet that adds functionality to the footnote implementation in Markdown.
 
-Markdown automatically adds footnotes[^1] that work: Click the superscript footnote number, the page jumps to the bottom, you read the footnote, you jump back up. This can be annoying for readers, since they often want to refer to the main text while reading the footnote. It's also ugly and jarring.
-
-[^1]: Like this one, for example.
+Markdown automatically adds footnotes that work: Click the superscript footnote number, the page jumps to the bottom, you read the footnote, you jump back up. This can be annoying for readers, since they often want to refer to the main text while reading the footnote. It's also ugly and jarring.
 
 This snippet replaces that functionality. When someone clicks the superscript footnote number, an overlay appears from the bottom of the screen with the requested footnote:
 
 [pic]
 
 ## How to use it
-The snippet depends on jQuery.
+The snippet requires jQuery, so make sure you have that.
 
-Download the JS file and include it on whatever page you want to add the functionality to. I just stuck it in the layout for my site, since I never know when I'll be using footnotes. There is no additional work needed.
+Then [download it](https://github.com/sumeetjain/jQuery-Markdown-Footnotes/zipball/master) and include the "jquery.markdownFootnotes.min.js" file on whatever page you want to add the functionality to. I just stuck it in the layout for my site, since I never know when I'll be using footnotes. There is no additional work needed.
 
 FYI - the default footnotes aren't removed. They remain at the bottom of an article as usual.
 
@@ -25,6 +23,14 @@ The display of the footnote is easily editable. Just alter the properties of the
 		'-webkit-box-shadow': '0px 0px 5px #000',
 		'-moz-box-shadow': '0px 0px 5px #000'
 	}
+	
+## "Uh... How do you do footnotes in Markdown?"
+Like this:
+
+	If a man is called to be a streetsweeper[^1], he should sweep streets even as Michelangelo painted or Beethoven composed music or Shakespeare wrote poetry. He should sweep streets so well that all the hosts of heaven and earth will pause and say, "Here lived a great streetsweeper who did his job well."[^2]
+
+	[^1]: A street sweeper or street cleaner can refer to a persons profession or a machine that cleans streets, usually in an urban area.
+	[^2]: Get it? Just keep adding references and text to build your footnotes.
 
 ## Also
 Feel free to submit pull requests - I'm sure this can be optimized in a thousand different ways.
