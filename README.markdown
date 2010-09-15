@@ -6,7 +6,7 @@ Markdown automatically adds footnotes that work: Click the superscript footnote 
 
 This snippet replaces that functionality. When someone clicks the superscript footnote number, an overlay appears from the bottom of the screen with the requested footnote:
 
-[pic]
+[![Screenshot of the snippet in action!](http://sumeetjain.com/jQuery-Markdown-Footnotes/screenshot.png)](http://sumeetjain.com/jQuery-Markdown-Footnotes/)
 
 ## How to use it
 The snippet requires jQuery, so make sure you have that.
