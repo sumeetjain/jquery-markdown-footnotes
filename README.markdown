@@ -1,4 +1,4 @@
-[Here's a demo.](http://sumeetjain.com/jQuery-Markdown-Footnotes/)
+[Here's a demo.](http://sumeetjain.com/jquery-markdown-footnotes/)
 
 This is a JS snippet that adds functionality to the footnote implementation in Markdown.
 
@@ -6,12 +6,12 @@ Markdown automatically adds footnotes that work: Click the superscript footnote 
 
 This snippet replaces that functionality. When someone clicks the superscript footnote number, an overlay appears from the bottom of the screen with the requested footnote:
 
-[![Screenshot of the snippet in action!](http://sumeetjain.com/jQuery-Markdown-Footnotes/screenshot.png)](http://sumeetjain.com/jQuery-Markdown-Footnotes/)
+[![Screenshot of the snippet in action!](http://sumeetjain.com/jquery-markdown-footnotes/screenshot.png)](http://sumeetjain.com/jquery-markdown-footnotes/)
 
 ## How to use it
 The snippet requires jQuery, so make sure you have that.
 
-Then [download it](https://github.com/sumeetjain/jQuery-Markdown-Footnotes/zipball/master) and include the "jquery.markdownFootnotes.min.js" file on whatever page you want to add the functionality to. I just stuck it in the layout for my site, since I never know when I'll be using footnotes. There is no additional work needed.
+Then [download it](https://github.com/sumeetjain/jquery-markdown-footnotes/zipball/master) and include the "jquery.markdownFootnotes.min.js" file on whatever page you want to add the functionality to. I just stuck it in the layout for my site, since I never know when I'll be using footnotes. There is no additional work needed.
 
 FYI - the default footnotes aren't removed. They remain at the bottom of an article as usual.
 
