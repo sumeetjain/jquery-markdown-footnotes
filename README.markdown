@@ -1,3 +1,5 @@
+[Here's a demo.](http://sumeetjain.com/jQuery-Markdown-Footnotes/)
+
 This is a JS snippet that adds functionality to the footnote implementation in Markdown.
 
 Markdown automatically adds footnotes that work: Click the superscript footnote number, the page jumps to the bottom, you read the footnote, you jump back up. This can be annoying for readers, since they often want to refer to the main text while reading the footnote. It's also ugly and jarring.
