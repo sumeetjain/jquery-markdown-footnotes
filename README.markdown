@@ -27,10 +27,10 @@ The display of the footnote is easily editable. Just alter the properties of the
 ## "Uh... How do you do footnotes in Markdown?"
 Like this:
 
-	If a man is called to be a streetsweeper[^1], he should sweep streets even as Michelangelo painted or Beethoven composed music or Shakespeare wrote poetry. He should sweep streets so well that all the hosts of heaven and earth will pause and say, "Here lived a great streetsweeper who did his job well."[^2]
+	Here is my paragraph[^1], here is my spout[^2].
 
-	[^1]: A street sweeper or street cleaner can refer to a persons profession or a machine that cleans streets, usually in an urban area.
-	[^2]: Get it? Just keep adding references and text to build your footnotes.
+	[^1]: A paragraph is many sentences.
+	[^2]: Just keep adding references and text to build your footnotes.
 
 ## Also
 Feel free to submit pull requests - I'm sure this can be optimized in a thousand different ways.
