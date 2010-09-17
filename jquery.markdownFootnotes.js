@@ -30,7 +30,7 @@ $(function() {
 			var $currentFootnote = $(document.getElementById('overlay-' + token));
 			
 			// If the footnote is already displayed, hide it instead
-			if ($currentFootnote.css('display') == 'block') {
+			if ($currentFootnote.is(':visible')) {
 				$currentFootnote.slideUp('fast');
 
 			} else {
