@@ -26,8 +26,18 @@ $(function() {
 		$('body').append('<div id="overlay-' + token + '" class="footnoteContent" style="display: none; position: fixed; bottom: 0; left: 50%; padding: 2%; width: 80%; margin-left: -42%;">' + footnoteContent + '</div>');
 		
 		link.click(function(){
-			$('.footnoteContent').hide();
-			$(document.getElementById('overlay-' + token)).slideDown('fast');
+
+			var $currentFootnote = $(document.getElementById('overlay-' + token));
+			
+			// If the footnote is already displayed, hide it instead
+			if ($currentFootnote.css('display') == 'block') {
+				$currentFootnote.slideUp('fast');
+
+			} else {
+				$('.footnoteContent').hide();
+				$currentFootnote.slideDown('fast');
+			}
+			
 			
 			return false;
 		});
