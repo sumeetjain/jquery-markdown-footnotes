@@ -26,7 +26,6 @@ $(function() {
 		$('body').append('<div id="overlay-' + token + '" class="footnoteContent" style="display: none; position: fixed; bottom: 0; left: 50%; padding: 2%; width: 80%; margin-left: -42%;">' + footnoteContent + '</div>');
 		
 		link.click(function(){
-
 			var $currentFootnote = $(document.getElementById('overlay-' + token));
 			
 			// If the footnote is already displayed, hide it instead
@@ -37,7 +36,6 @@ $(function() {
 				$('.footnoteContent').hide();
 				$currentFootnote.slideDown('fast');
 			}
-			
 			
 			return false;
 		});
